@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<h2>List Of Books</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Published Year</th>
+      <th>Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Write the line of EJS to iterate over flights using forEach -->
+    <% books.forEach(function(b) { %>
+
+      <tr>
+        <td><a href="/books/<%= b._id %>"><%= b.title %></a></td>
+        <td><%= b.publishedYear %></td>
+        <td><%= b.genre %></td>
+        <!-- <td>DETAILS</a></td> -->
+
+      </tr>
+    <% }); %>
+
+  </tbody>
+
+<%- include('../partials/footer') %>

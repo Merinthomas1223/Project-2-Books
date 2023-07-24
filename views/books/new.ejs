@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/books" method="POST">
+  <label>Title:</label>
+  <input type="text" name="title">
+  <br/>
+  <label>Published Year:</label>
+  <input type="text" name="publishedYear">
+  <br/>
+  <label>Genre:</label>
+  <input type="text" name="genre">
+  <br/>
+  <input type="submit" value="Add Book">
+</form>
+
+<%- include('../partials/footer') %>
