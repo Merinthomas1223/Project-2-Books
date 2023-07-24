@@ -5,6 +5,70 @@ body {
   background-color: rgb(249, 212, 212);
 }
 
-a {
-  color: #00B7FF;
+button{
+  background-color: #d884a3;
+  border: none;
+  color: rgb(31, 4, 4);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.button:hover {background-color: rgba(55, 210, 194, 0.933)}
+
+.button:active {
+  background-color: #1983a6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+a{
+  color: rgb(54, 80, 184);
+  text-decoration: none;
+}
+table {
+  font-size: 20px;
+}
+
+table thead th {
+  padding: 5px;
+}
+
+table td {
+  padding: 10px;
+  text-align: left;
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label,
+input {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+label+input {
+  width: 30%;
+  margin: 0 30% 0 4%;
+}
+
+input+input {
+  float: right;
+}
+input[type=submit] {
+  background-color: #3dc4ce;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }
