@@ -2,11 +2,14 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
-  background-color: rgb(249, 212, 212);
+  background-image:url('/images/bookimg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
 }
 
 button{
-  background-color: #d884a3;
+  background-color: #eb9a36;
   border: none;
   color: rgb(31, 4, 4);
   padding: 15px 32px;
@@ -16,10 +19,10 @@ button{
   font-size: 16px;
   border-radius: 8px;
 }
-.button:hover {background-color: rgba(55, 210, 194, 0.933)}
+.button:hover {background-color: rgba(193, 130, 183, 0.933)}
 
 .button:active {
-  background-color: #1983a6;
+  background-color: #e1d57a;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -71,4 +74,8 @@ input[type=submit] {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
+}
+img {
+  padding:20px;
+  width:250px;
 }

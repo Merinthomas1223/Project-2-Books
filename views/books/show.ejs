@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
+  <div class = "image"><img src = "<%= book.image%>"></div>
   <div>Title: <%= book.title %></div>
   <div>Published Year: <%= book.publishedYear %></div>
   <div>Genre: <%= book.genre %></div>
@@ -11,7 +12,7 @@
   <table>
     <thead>
       <tr>
-        <th>Date</th>
+        <!-- <th>Date</th> -->
         <th>Review</th>
         <th>Rating</th>
       </tr>
@@ -19,9 +20,7 @@
     <tbody>
       <% book.reviews.forEach(function(r) { %>
         <tr>
-          <!-- .toLocaleDateString() provides a more friendly date format -->
-          <td><%= r.createdAt.toLocaleDateString() %></td>
-          <td><%= r.content %></td>
+          <td><%= r.comment %></td>
           <td><%= r.rating %></td>
         </tr>
       <% }); %>
@@ -37,7 +36,7 @@
 <form id="add-review-form" method="POST"
   action="/books/<%= book._id %>/reviews">
   <label>Review:</label>
-  <textarea name="content"></textarea>
+  <textarea name="comment"></textarea>
   <br/>
   <label>Rate 1 to 10:</label>
   <input type="text" name="rating"><br/><br/>

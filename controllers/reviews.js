@@ -13,6 +13,7 @@ async function create(req,res) {
     res.redirect(`/books/${book._id}`);
 
   } catch (err) {
+    res.status(500).json(err)
   }
   // Step 5:  Respond to the Request (redirect if data has been changed)
 }

@@ -17,6 +17,7 @@ const reviewSchema = new Schema({
   timestamps: true})
 
 const bookSchema = new Schema({
+  image:String,
   title: String,
   publishedYear: Number,
   genre: String,
