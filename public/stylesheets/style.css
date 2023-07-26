@@ -2,10 +2,12 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
-  background-image:url('/images/bookimg.jpeg');
+  background:rgb(156, 166, 140);
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #864f06;
 }
 
 button{
@@ -78,4 +80,33 @@ input[type=submit] {
 img {
   padding:20px;
   width:250px;
+}
+
+
+#add-review-form input[type="submit"] {
+  width: 8rem;
+  grid-column: 2 / 2;
+  margin-bottom: 2rem;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+  width:30px;
+}
+.review-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-user img {
+  border-radius: 50%;
+  height: 20px;
+  width:20px;
 }

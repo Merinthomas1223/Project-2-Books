@@ -10,8 +10,14 @@
 </head>
 <body>
   <nav>
-    
-    <button class = button><a href="/books/new">Add Book</a></button>
-    <button class = button><a href="/books">All Books</a></button>
-  </nav>
+
+    <% if (user) { %>
+      <button class = button><a href="/books/new">Add Book</a></button>
+      <button class = button><a href="/books">All Books</a></button>
+    </nav>
+        <a href="/logout">LOG OUT</a>
+    <% } else { %>
+      <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
+  
   

@@ -13,19 +13,29 @@ const reviewSchema = new Schema({
     max:10,
     default:10
   }, 
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  userName: String,
+  userAvatar: String
 }, {
-  timestamps: true})
+  timestamps: true
+});
 
 const bookSchema = new Schema({
   image:String,
   title: String,
   publishedYear: Number,
   genre: String,
+  author:String,
   reviews: [reviewSchema]
 },
 {
   timestamps: true
 });
+
 bookSchema.static('getAll', function() {
   return this.find();
   });

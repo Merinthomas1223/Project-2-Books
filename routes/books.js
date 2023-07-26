@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var booksCtrl = require('../controllers/books');
+// Require the auth middleware
+const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 
 // GET /books

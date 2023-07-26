@@ -6,7 +6,11 @@ module.exports = {
 
 async function create(req,res) {
   try {
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name;
+    req.body.userAvatar = req.user.avatar;
     const book = await Book.findById(req.params.id);
+
     // Save any changes made to the book doc
     book.reviews.push(req.body);
     await book.save();
